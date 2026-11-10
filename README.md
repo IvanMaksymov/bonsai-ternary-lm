@@ -167,7 +167,7 @@ python3 bonsai_lm.py --data data/fineweb_edu --config base --tokens 2.5e9 --comp
 python3 compare.py --pair "base 124M" runs/base_t/log.csv runs/base_fp/log.csv
 ```
 
-Long runs can be stopped with Ctrl+C, which saves a checkpoint, and continued with `--resume`.
+Long runs can be stopped with Ctrl+C, which saves a checkpoint and continued with `--resume`.
 If you run out of GPU memory, use `--micro-batch 4`; the effective batch size stays the same.
 
 **Generate text with the included ternary model:**
@@ -183,7 +183,7 @@ source. It was produced by `export_packed()` in `bonsai_lm.py`.
 
 ## Next steps
 
-- Learning-rate sweeps for both precisions, and repeat seeds, to separate real effects from noise.
+- Learning-rate sweeps for both precisions and repeat seeds, to separate real effects from noise.
 - Training longer: the full 10B tokens for the 124M model.
 - Quantizing the embedding to 8 bits, to bring the whole model close to the ternary layers' 9×
   compression.
@@ -195,11 +195,6 @@ source. It was produced by `export_packed()` in `bonsai_lm.py`.
 FineWeb-Edu by Hugging Face (ODC-By licence). Training-loop structure inspired by Andrej
 Karpathy's nanoGPT. Ternary format inspired by PrismML's Bonsai 2 and by BitNet b1.58
 (Ma et al., 2024, [arXiv:2402.17764](https://arxiv.org/abs/2402.17764)).
-
-## Author
-
-**Dr Ivan S. Maksymov**, physicist, Australian Research Council Future Fellow, Ig Nobel Prize
-in Physics 2020.
 
 ## Licence
 
