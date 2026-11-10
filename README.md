@@ -122,10 +122,10 @@ The small model uses width 512 and 8 layers, with otherwise identical settings, 
 Both precisions see exactly the same data in the same order.
 
 **Hardware.** A Dell Precision Tower 3620 (Core i7-7700K, 64 GB RAM) with a Zotac RTX 3060
-12 GB. The Dell's 290 W power supply has no GPU power connector, so the machine runs on a
+12 GB. The original Dell's 290 W power supply had no GPU power connector, so the machine runs on a
 repurposed 460 W ATX supply from an older PC, connected through a 24-pin-to-Dell-8-pin adapter.
 The GPU was power-capped at about 130 W for much of training, which cost about 1% in clock
-speed. Each 33-hour base run used roughly 9–10 kWh (estimated), about A$3 of electricity.
+speed. Each 33-hour base run used roughly 9–10 kWh (estimated), about AUD $3 of electricity.
 
 ---
 
