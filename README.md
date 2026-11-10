@@ -1,4 +1,4 @@
-# Bonsai-style ternary language models on a single consumer GPU
+# Bonsai-style ternary LLMs on a single consumer GPU
 
 Training GPT-style language models whose weights are restricted to **{−1, 0, +1}**, from
 scratch, on a single **RTX 3060 (12 GB)**, and measuring exactly what the ternary format costs
