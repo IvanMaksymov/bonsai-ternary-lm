@@ -13,12 +13,12 @@ compared with an identical full-precision model.
 - Its ternary layers are stored at **1.725 bits per weight**, **9.3× smaller** than FP16.
   The whole packed model (95.7 MB) fits in this repository; its full-precision twin does not.
 - Everything is written from scratch in PyTorch: the data pipeline, the model, the ternary
-  quantization with a straight-through estimator, base-3 weight packing, and evaluation tools.
+  quantization with a straight-through estimator, base-3 weight packing and evaluation tools.
 
 > Inspired by the ternary format of PrismML's
 > [Bonsai 2](https://prismml.com/news/bonsai-2-27b) models and by
 > [BitNet b1.58](https://arxiv.org/abs/2402.17764). This is an independent project, not
-> affiliated with PrismML.
+> affiliated with PrismML, undertaken as a Friday night experiment intended to better understand ternary LLMs.
 
 ---
 
