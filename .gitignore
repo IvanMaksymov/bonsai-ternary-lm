@@ -1,0 +1,8 @@
+# Large local files: data and training checkpoints
+data/
+runs/
+*.bin
+tinyshakespeare.txt
+__pycache__/
+*.json
+!logs/*.json
