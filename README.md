@@ -57,7 +57,7 @@ billion-parameter scale). Possible reasons, not yet separated experimentally:
 1. **Ternary share.** The high-precision embedding (tied with the output layer) is half of the
    small model but under a third of the base model, so more of the base model is ternary.
 2. **Learning rates.** Each precision used a standard default (1.5e-3 ternary, 6e-4 full
-   precision). Neither was tuned, and the best learning rate can differ between sizes.
+   precision). Neither was tuned and the best learning rate can differ between sizes.
 3. **Method differences.** Only the weights are ternary here; BitNet b1.58 also quantizes
    activations to 8 bits and trains much larger models on far more data.
 4. **One run per configuration.** No repeat seeds yet, so small differences (such as the
