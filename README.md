@@ -43,7 +43,7 @@ compared with an identical full-precision model.
 
 - **Ternary starts ahead.** Early in training the ternary models lead, mostly because they use
   a higher learning rate (1.5e-3 versus 6e-4), not because ternary weights learn faster.
-- **Full precision overtakes after about 0.2–0.25B tokens**, and a stable gap opens.
+- **Full precision overtakes after about 0.2–0.25B tokens** and a stable gap opens.
 - **At 51M parameters the cost is small** (+0.010 nats, about 1% higher perplexity).
 - **At 124M parameters the cost is larger:** the gap grows to about 0.13 nats by roughly 1.3B
   tokens and then stays flat (0.124–0.133) until the end of training.
